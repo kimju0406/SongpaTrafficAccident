@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="2019년 송파구 교통사고 정보"
+        android:textColor="#343434"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="http://apis.data.go.kr/B552061/AccidentDeath/getRestTrafficAccidentDeath?serviceKey=YEdNBoPcEWIo86aTnIlHYJCzSGnrx33xICZoFc%2Flb67giDwuJqWIcrgx0R1UvhYNg%2BTabYAOhKUHSrV3ipfAtw%3D%3D&#38;searchYear=2019&#38;siDo=1100&#38;guGun=1118&#38;type=json&#38;numOfRows=10&#38;pageNo=1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조회하기" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
